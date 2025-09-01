@@ -98,6 +98,70 @@ Users with visibility and access limited to their assigned department(s):
   - Access to department reports
   - No modification privileges
 
+### Agreement
+- **Definition**: A formal document that outlines the terms, conditions, and details of a subscription between a Customer and a Vendor.
+- **Relationships**:
+  - Belongs to one **Subscription**
+  - Involves one **Customer** and one **Vendor**
+  - May be managed by **Department Subscription Owner**
+  - Reviewed by **Enterprise Finance Manager**
+- **Attributes**:
+  - Contract terms
+  - Pricing details
+  - Service level agreements (SLAs)
+  - Renewal terms
+  - Special conditions or amendments
+
+### Technical Owner
+- **Definition**: An individual responsible for the technical aspects of subscription integration and management.
+- **Relationships**:
+  - Works with **Department Subscription Owner**
+  - Manages technical aspects of **Subscriptions**
+  - May span multiple **Departments**
+- **Responsibilities**:
+  - Integration setup
+  - Access configuration
+  - Technical documentation
+  - System maintenance
+
+### Budget Forecast
+- **Definition**: A projected financial plan for subscription costs over multiple years.
+- **Relationships**:
+  - Associated with **Customer**
+  - Broken down by **Department**
+  - Includes multiple **Subscriptions**
+- **Attributes**:
+  - Current year budget
+  - Future year projections
+  - Historical cost data
+  - Growth assumptions
+  - Renewal impact
+
+### Document Repository
+- **Definition**: A centralized storage system for all subscription-related documentation.
+- **Components**:
+  - Agreements
+  - Invoices
+  - Technical documentation
+  - Integration guides
+- **Features**:
+  - Multi-channel submission (direct upload, email)
+  - Automatic categorization
+  - Version control
+  - Access controls
+
+### License User
+- **Definition**: An individual who uses a subscription service but may not have direct access to Applogie.
+- **Relationships**:
+  - Associated with one or more **Subscriptions**
+  - Belongs to one or more **Departments**
+  - Managed by **Department Subscription Owner**
+- **Attributes**:
+  - License assignments
+  - Usage data
+  - Department association
+  - Access levels
+
 ### License User
 - **Definition**: An individual within the Customer organization who uses or is assigned to one or more software subscriptions, but may not necessarily have access to the Applogie platform.
 - **Relationships**:

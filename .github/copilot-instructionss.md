@@ -1,3 +1,3 @@
 ## Appplogie company information
 - Information about Applogie can be gathered from https://applogie.com/
-- Existing product documentation can be found at https://github.com/bcarr-applogie/copilot-test/tree/main/docs
+- Always reference docs/glossary.md for a glossary of Applogie specific terms to use
