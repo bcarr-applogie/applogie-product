@@ -1,7 +1,7 @@
 # Subscription Onboarding
 
 ## Overview
-The process of discovering, documenting, and integ### Common Challenges
+The process of discovering, documenting, and integrating new SaaS subscriptions into the organization's management system. This is a critical cross-role job that ensures proper tracking, optimization, and governance of SaaS spend from day one.
 
 ### Data Collection
 - **Challenge**: Incomplete subscription information
