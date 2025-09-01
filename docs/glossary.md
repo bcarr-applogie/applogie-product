@@ -49,15 +49,54 @@ This document defines the key terms used throughout the Applogie product documen
 - **Definition**: An individual who has login credentials and uses the Applogie platform to manage, monitor, or administer subscriptions and related tasks.
 - **Relationships**:
   - Belongs to one **Customer**
-  - Can belong to one or more **Departments**
-  - Can manage multiple **Subscriptions**
-  - Can manage multiple **License Users**
-- **Types**:
-  - System Administrator: Manages all aspects of Applogie configuration
-  - Department Manager: Manages department-specific subscriptions and users
-  - Finance Manager: Monitors and manages costs and billing
-  - Subscription Owner: Manages specific subscription details
-  - Read-only User: Views subscription and license information
+  - Can be Enterprise-level or Department-level
+  - Can manage multiple **Subscriptions** (based on scope)
+  - Can manage multiple **License Users** (based on scope)
+
+#### Enterprise-Level Roles
+Users with visibility and access across all departments:
+- **System Administrator**:
+  - Full system configuration access
+  - Manages all departments and users
+  - Complete subscription oversight
+  - User and role management
+
+- **Enterprise Finance Manager**:
+  - Cross-department financial oversight
+  - Company-wide cost analysis
+  - Budget management across departments
+  - Enterprise-level reporting
+
+- **Enterprise Subscription Manager**:
+  - Cross-department subscription management
+  - License allocation across departments
+  - Vendor relationship management
+  - Enterprise-wide compliance monitoring
+
+#### Department-Level Roles
+Users with visibility and access limited to their assigned department(s):
+- **Department Manager**:
+  - Manages department subscriptions
+  - Oversees department license users
+  - Department-level reporting
+  - Budget tracking for department
+
+- **Department Finance Analyst**:
+  - Department cost tracking
+  - Subscription usage analysis
+  - Department budget management
+  - Department-specific reporting
+
+- **Department Subscription Owner**:
+  - Manages specific subscriptions
+  - License user assignment
+  - Usage monitoring
+  - Renewal management
+
+- **Department Read-Only User**:
+  - Views department subscriptions
+  - Access to department reports
+  - No modification privileges
 
 ### License User
 - **Definition**: An individual within the Customer organization who uses or is assigned to one or more software subscriptions, but may not necessarily have access to the Applogie platform.
@@ -97,36 +136,72 @@ graph TD
 
 ## Additional Context
 
-### Role-Based Access
-Access levels and capabilities within Applogie are determined by the Applogie User's role:
-- **System Administrators**:
-  - Manage all aspects of the Customer's Applogie account
-  - Configure system-wide settings
-  - Manage other Applogie Users and their roles
-  - Full access to all subscription and license management features
+### Role-Based Access and Scope
 
-- **Department Managers**:
-  - Manage their department's subscriptions and License Users
-  - View and manage department-specific costs and allocations
-  - Generate department-specific reports
-  - Limited to their department's scope
+#### Enterprise-Level Access
+Users with enterprise-level roles have broad, cross-departmental access:
 
-- **Finance Managers**:
-  - Access to all cost and billing information
-  - Generate financial reports
-  - Monitor spending across departments
-  - View license utilization data
+- **System Administrator Capabilities**:
+  - Configure system-wide settings and integrations
+  - Manage all Applogie users and role assignments
+  - Create and manage department structures
+  - Access all subscription and license data
+  - Configure enterprise-wide policies
+  - Manage authentication and security settings
 
-- **Subscription Owners**:
-  - Manage specific subscription details
-  - Assign and remove License Users
-  - Monitor usage and compliance
-  - Handle renewal and changes for their subscriptions
+- **Enterprise Finance Manager Capabilities**:
+  - View and analyze costs across all departments
+  - Manage enterprise-wide budgets
+  - Configure cost allocation rules
+  - Generate enterprise-level financial reports
+  - Set up billing integrations
+  - Track overall subscription spending
 
-- **Read-only Users**:
-  - View subscription and license information
-  - Generate reports
-  - No ability to make changes
+- **Enterprise Subscription Manager Capabilities**:
+  - Manage subscriptions across all departments
+  - Oversee license allocation strategies
+  - Monitor enterprise-wide compliance
+  - Manage vendor relationships
+  - Configure subscription policies
+  - Track overall subscription utilization
+
+#### Department-Level Access
+Users with department-level roles have access limited to their assigned department(s):
+
+- **Department Manager Capabilities**:
+  - Manage department-specific settings
+  - Assign department-level user roles
+  - View and manage department subscriptions
+  - Generate department-level reports
+  - Track department budget utilization
+  - Manage department license assignments
+
+- **Department Finance Analyst Capabilities**:
+  - View department-specific costs
+  - Track department budget
+  - Generate department financial reports
+  - Analyze department subscription usage
+  - Monitor department spending trends
+
+- **Department Subscription Owner Capabilities**:
+  - Manage assigned subscriptions
+  - Handle license assignments within department
+  - Monitor subscription usage
+  - Manage renewal processes
+  - Track compliance within department
+
+- **Department Read-Only User Capabilities**:
+  - View department subscription details
+  - Access department-specific reports
+  - View license assignments
+  - Monitor usage metrics
+  - No modification privileges
+
+#### Access Inheritance and Delegation
+- Department-level users cannot access data from other departments
+- Enterprise-level users can access and manage all department data
+- Department-level users can be granted access to multiple departments if needed
+- Enterprise-level users can temporarily delegate specific permissions to department-level users
 
 ### Subscription Management
 - A subscription can be centrally managed or department-managed
