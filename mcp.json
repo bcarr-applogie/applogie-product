@@ -1,0 +1,8 @@
+{
+  "name": "applogie-product-mcp",
+  "type": "github",
+  "github": {
+    "owner": "bcarr-applogie",
+    "repo": "applogie-product"
+  }
+}
