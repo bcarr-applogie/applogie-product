@@ -45,46 +45,88 @@ This document defines the key terms used throughout the Applogie product documen
   - Cost center information
   - Department head/manager
 
-### User
-- **Definition**: An individual who has access to Applogie and/or uses subscriptions managed through Applogie.
+### Applogie User
+- **Definition**: An individual who has login credentials and uses the Applogie platform to manage, monitor, or administer subscriptions and related tasks.
+- **Relationships**:
+  - Belongs to one **Customer**
+  - Can belong to one or more **Departments**
+  - Can manage multiple **Subscriptions**
+  - Can manage multiple **License Users**
+- **Types**:
+  - System Administrator: Manages all aspects of Applogie configuration
+  - Department Manager: Manages department-specific subscriptions and users
+  - Finance Manager: Monitors and manages costs and billing
+  - Subscription Owner: Manages specific subscription details
+  - Read-only User: Views subscription and license information
+
+### License User
+- **Definition**: An individual within the Customer organization who uses or is assigned to one or more software subscriptions, but may not necessarily have access to the Applogie platform.
 - **Relationships**:
   - Belongs to one **Customer**
   - Can belong to one or more **Departments**
   - Can be assigned to multiple **Subscriptions**
-- **Types**:
-  - System Administrator
-  - Department Manager
-  - End User
-  - Finance Manager
-  - Subscription Owner
+  - May or may not be an **Applogie User**
+- **Attributes**:
+  - License assignments
+  - Usage data
+  - Department affiliation
+  - Employee status (active/inactive)
 
 ## Hierarchy
 
 ```mermaid
 graph TD
     Customer --> Department
-    Customer --> User
+    Customer --> Applogie[Applogie User]
+    Customer --> License[License User]
     Customer --> Subscription
     Vendor --> Subscription
-    Department --> User[User *]
+    Department --> License[License User *]
     Department --> Subscription[Subscription *]
+    Applogie --> Subscription[Manages Subscriptions]
+    Applogie --> License[Manages License Users]
+    Subscription --> License[Assigned to]
     
     style Customer fill:#f9f,stroke:#333,stroke-width:2px
     style Vendor fill:#bbf,stroke:#333,stroke-width:2px
     style Department fill:#bfb,stroke:#333,stroke-width:2px
-    style User fill:#fbb,stroke:#333,stroke-width:2px
+    style Applogie fill:#fbb,stroke:#333,stroke-width:2px
+    style License fill:#ffb,stroke:#333,stroke-width:2px
     style Subscription fill:#fff,stroke:#333,stroke-width:2px
 ```
 
 ## Additional Context
 
 ### Role-Based Access
-Different user types have different levels of access and capabilities within Applogie:
-- System Administrators can manage all aspects of the Customer's account
-- Department Managers can manage their department's subscriptions and users
-- End Users may only have access to assigned subscriptions
-- Finance Managers have access to cost and billing information
-- Subscription Owners manage specific subscription details and assignments
+Access levels and capabilities within Applogie are determined by the Applogie User's role:
+- **System Administrators**:
+  - Manage all aspects of the Customer's Applogie account
+  - Configure system-wide settings
+  - Manage other Applogie Users and their roles
+  - Full access to all subscription and license management features
+
+- **Department Managers**:
+  - Manage their department's subscriptions and License Users
+  - View and manage department-specific costs and allocations
+  - Generate department-specific reports
+  - Limited to their department's scope
+
+- **Finance Managers**:
+  - Access to all cost and billing information
+  - Generate financial reports
+  - Monitor spending across departments
+  - View license utilization data
+
+- **Subscription Owners**:
+  - Manage specific subscription details
+  - Assign and remove License Users
+  - Monitor usage and compliance
+  - Handle renewal and changes for their subscriptions
+
+- **Read-only Users**:
+  - View subscription and license information
+  - Generate reports
+  - No ability to make changes
 
 ### Subscription Management
 - A subscription can be centrally managed or department-managed
