@@ -1,6 +1,17 @@
 # User Types and Relationships
 
-This document explains the different types of users in Applogie and how they relate to various aspects of the syste### Common Scenarios
+This document explains the different types of users in Applogie and ho### Special Relationships
+
+### Executive Visibility
+- **Access Level**: Enterprise-wide view access
+- **Purpose**: Strategic oversight and decision-making
+- **Limitations**: View-only access without operational responsibilities
+- **Example**: [Edward Ellsworth](../user-personas/external/company-executive.md) has visibility into overall technology investments without direct system management responsibilities
+
+### Data Specialists
+- May have unique cross-department access for data management
+- Focus on data accuracy and integration
+- Example: [Diana Dwyer](../user-personas/external/data-specialist.md) ensuring data quality across departments relate to various aspects of the syste### Common Scenarios
 
 ### New Employee Onboarding
 1. Finance team or delegated administrator creates user account
@@ -46,7 +57,7 @@ Users in Applogie fall into two main categories:
 ### Enterprise-Level Access
 - **Scope**: Organization-wide visibility and management
 - **Typical Roles**:
-  - System Administrators
+  - System Administrators (IT)
   - Enterprise Finance Managers (Primary administrators)
   - Enterprise Subscription Managers
 - **Responsibilities**:
@@ -54,7 +65,7 @@ Users in Applogie fall into two main categories:
   - Budget setting and multi-year forecasting
   - Document management oversight
   - Subscription cost tracking
-- **Example**: [Edward Ellsworth](../user-personas/external/company-executive.md) might have enterprise-level access to oversee all technology investments
+- **Example**: [Francine Fitzgerald](../user-personas/external/finance-director.md) manages enterprise-wide user access and subscription administration
 
 ### Department-Level Access
 - **Scope**: Limited to specific department(s)
