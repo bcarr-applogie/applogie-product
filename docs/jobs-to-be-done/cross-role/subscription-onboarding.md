@@ -1,17 +1,59 @@
 # Subscription Onboarding
 
 ## Overview
-The process of discovering, documenting, and integrating new SaaS subscriptions into the organization's management system. This is a critical cross-role job that ensures proper tracking, optimization, and governance of SaaS spend from day one.
+The process of discovering, documenting, and integ### Common Challenges
+
+### Data Collection
+- **Challenge**: Incomplete subscription information
+- **Solution**: 
+  - Standardized onboarding checklist
+  - Automated data validation
+  - Email-based document submission
+  - Automated reminders for missing information
+
+### Role Management
+- **Challenge**: Complex department and role relationships
+- **Solution**:
+  - Clear role definitions
+  - Documented delegation procedures
+  - Department-level administration capabilities
+  - Technical ownership tracking
+
+### Integration
+- **Challenge**: Technical complexity and documentation
+- **Solution**:
+  - Designated technical owner role
+  - Standardized integration documentation
+  - Clear technical requirements checklist
+  - Integration validation process
+
+### Communication
+- **Challenge**: Multiple stakeholder coordination
+- **Solution**:
+  - Automated workflow management
+  - Clear approval hierarchies
+  - Automated reminders and escalations
+  - Role-specific notifications
+
+### Document Management
+- **Challenge**: Scattered documentation across systems
+- **Solution**:
+  - Centralized document repository
+  - Multi-channel document submission
+  - Automatic categorization
+  - Version control and audit trailaS subscriptions into the organization's management system. This is a critical cross-role job that ensures proper tracking, optimization, and governance of SaaS spend from day one.
 
 ## Primary Stakeholders
-- **Subscription Owner** (Samuel Singh): Initiates the process, provides access details
+- **Finance Director** (Francine Fitzgerald): Primary administrator, manages user access and approvals
+- **Department Subscription Owner** (Samuel Singh): Provides business context and requirements
+- **Technical Owner**: Manages integration requirements and technical documentation
 - **Data Specialist** (Diana Dwyer): Ensures data accuracy and completeness
-- **Finance Director** (Francine Fitzgerald): Validates financial implications and approval
+- **Department Manager**: Validates department-level requirements and budget
 
 ## Workflow
 
 ### 1. Discovery Phase
-**Subscription Owner**
+**Department Subscription Owner** & **Department Manager**
 - Identifies new subscription need
 - Gathers basic subscription details:
   - Vendor name
@@ -22,18 +64,27 @@ The process of discovering, documenting, and integrating new SaaS subscriptions 
   - Total cost
   - Payment terms
   - Contract duration
+- Validates department budget availability
+- Identifies technical requirements
 
 ### 2. Documentation Phase
-**Data Specialist**
+**Finance Director** & **Data Specialist**
 - Creates subscription record in Applogie
 - Validates subscription details:
-  - Contract documents
+  - Contract documents (via direct upload or email)
   - Invoice details
   - License counts
   - User assignments
   - Integration status
 - Tags and categorizes subscription
 - Sets up data collection parameters
+- Assigns technical owner if required
+
+**Technical Owner**
+- Documents technical requirements
+- Provides integration documentation
+- Specifies login procedures
+- Plans technical setup needs
 
 ### 3. Financial Review
 **Finance Director**
