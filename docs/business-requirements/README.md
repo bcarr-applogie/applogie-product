@@ -16,6 +16,9 @@ Each major system component has its own directory containing:
 ### [User Management](./user-management/)
 Requirements for user administration, role management, and access control systems.
 
+### [Vendor Management](./vendor-management/)
+Requirements for vendor data management, including discovery, validation, and publication workflows.
+
 ## Writing Guidelines
 
 ### Requirement Properties

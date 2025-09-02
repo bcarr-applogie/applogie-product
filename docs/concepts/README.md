@@ -14,9 +14,11 @@ concepts/
 ├── subscription-management/
 │   ├── subscription-ownership.md
 │   └── subscription-department-mapping.md
-└── department-structure/
-    ├── department-hierarchy.md
-    └── access-inheritance.md
+├── department-structure/
+│   ├── department-hierarchy.md
+│   └── access-inheritance.md
+└── vendor-management/
+    └── vendor-management-system.md
 ```
 
 ## Key Relationships Overview
@@ -32,6 +34,12 @@ concepts/
 - Department-based subscription allocation
 - Cross-department subscription sharing
 - Vendor relationship management
+
+### Vendor Management
+- Automated vendor discovery and validation
+- Data quality control and publication
+- Change management and version control
+- Integration with customer-facing systems
 
 ### Department Structure
 - Department hierarchy and organization
