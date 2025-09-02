@@ -86,7 +86,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Enable department-specific role assignments
 - Track department structure changes
 
-### UM-4: Delegation Management
+### UM-6: Delegation Management
 
 **Priority**: Should Have
 
@@ -97,7 +97,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Track delegation history
 - Notify relevant parties of delegation changes
 
-### UM-5: User Session Management
+### UM-7: User Session Management
 
 **Priority**: Must Have
 
