@@ -6,7 +6,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
 ## Core Requirements
 
 ### UM-1: User Type Distinction
+
 **Priority**: Must Have
+
 **Business Value**: Essential for multi-tenant support and internal operations
 - Support two primary user categories:
   1. Internal Applogie Users
@@ -25,7 +27,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Support customer-specific branding/customization for customer users
 
 ### UM-2: Internal User Capabilities
+
 **Priority**: Must Have
+
 **Business Value**: Enables efficient customer support and administration
 - Seamless customer instance switching
   - Quick customer context selector
@@ -47,7 +51,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
   - Action approval workflows
 
 ### UM-3: User Creation and Management
+
 **Priority**: Must Have
+
 **Business Value**: Essential for system access and security
 - System must support creation of user accounts with unique identifiers
 - Support bulk user import capabilities
@@ -56,8 +62,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Track user account status changes
 - Support user account deletion with audit trail
 
-### UM-2: Role-Based Access Control
+### UM-4: Role-Based Access Control
+
 **Priority**: Must Have
+
 **Business Value**: Ensures proper data access and security
 - Support predefined roles (Enterprise Admin, Department Admin, etc.)
 - Allow custom role creation
@@ -66,8 +74,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Maintain role hierarchy
 - Track role assignment history
 
-### UM-3: Department Management
+### UM-5: Department Management
+
 **Priority**: Must Have
+
 **Business Value**: Core organizational structure support
 - Enable department creation and management
 - Support department hierarchy (parent/child relationships)
@@ -117,7 +127,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
   - Quick return to previous contexts
 
 ### UI-2: Internal Support Dashboard
+
 **Priority**: Must Have
+
 **Business Value**: Efficient customer support operations
 - System-wide visibility
   - Multi-customer status overview
@@ -133,7 +145,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
   - Emergency access controls
 
 ### UI-3: User Management Interface
+
 **Priority**: Must Have
+
 **Business Value**: Efficient user administration
 - Provide user search and filtering
 - Display user status indicators
@@ -142,8 +156,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Enable bulk operations
 - Support sortable/filterable user lists
 
-### UI-2: Role Management Interface
+### UI-4: Role Management Interface
+
 **Priority**: Must Have
+
 **Business Value**: Effective role administration
 - Display role hierarchies
 - Show role permissions
@@ -151,8 +167,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Support role comparison
 - Enable permission management
 
-### UI-3: Department Management Interface
+### UI-5: Department Management Interface
+
 **Priority**: Must Have
+
 **Business Value**: Organizational structure management
 - Visualize department hierarchy
 - Show department members
@@ -179,7 +197,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
   - Support tool configurations
 
 ### DM-2: User Profile Data
+
 **Priority**: Must Have
+
 **Business Value**: User information management
 - Store essential user information
   - Name
@@ -191,8 +211,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Support custom user attributes
 - Enable data export capabilities
 
-### DM-2: Access Control Data
+### DM-3: Access Control Data
+
 **Priority**: Must Have
+
 **Business Value**: Security management
 - Maintain permission definitions
 - Store role configurations
@@ -200,8 +222,10 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Record permission changes
 - Support audit requirements
 
-### DM-3: Audit Trail
+### DM-4: Audit Trail
+
 **Priority**: Must Have
+
 **Business Value**: Compliance and security
 - Log all user management actions
 - Record role changes
