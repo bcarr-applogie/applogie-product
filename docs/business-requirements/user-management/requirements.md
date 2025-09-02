@@ -5,7 +5,48 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ## Core Requirements
 
-### UM-1: User Creation and Management
+### UM-1: User Type Distinction
+**Priority**: Must Have
+**Business Value**: Essential for multi-tenant support and internal operations
+- Support two primary user categories:
+  1. Internal Applogie Users
+     - Access to multiple customer instances
+     - Support role capabilities
+     - System-wide administrative functions
+     - Ability to switch between customer contexts
+     - Support-specific permissions
+  2. Customer Users
+     - Access limited to their company instance
+     - Role-based access within their organization
+     - Company-specific permissions
+- Maintain clear separation between user types
+- Support different authentication flows for each type
+- Enable audit tracking of internal user actions across instances
+- Support customer-specific branding/customization for customer users
+
+### UM-2: Internal User Capabilities
+**Priority**: Must Have
+**Business Value**: Enables efficient customer support and administration
+- Seamless customer instance switching
+  - Quick customer context selector
+  - Maintain session state across switches
+  - Clear indication of current customer context
+  - Recent customer list
+  - Search/filter customer instances
+- Support capabilities
+  - View customer configuration
+  - Access support-specific tools
+  - Perform administrative actions
+  - View system-wide metrics
+  - Access audit logs across instances
+- Security controls
+  - Strict audit logging of all actions
+  - Support role hierarchy
+  - Emergency access protocols
+  - Customer data access controls
+  - Action approval workflows
+
+### UM-3: User Creation and Management
 **Priority**: Must Have
 **Business Value**: Essential for system access and security
 - System must support creation of user accounts with unique identifiers
@@ -55,7 +96,43 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ## User Interface Requirements
 
-### UI-1: User Management Interface
+### UI-1: Customer Context Switcher
+**Priority**: Must Have
+**Business Value**: Essential for internal user productivity
+- Persistent customer context selector
+  - Always visible for internal users
+  - Clear current customer indication
+  - Quick search functionality
+  - Recent customer list
+  - Favorite customer marking
+- Context awareness
+  - Visual indicators of environment (prod/test)
+  - Clear separation of customer data
+  - Action confirmation in context
+  - Permission indicators per context
+- Session management
+  - Maintain settings across switches
+  - Context-specific preferences
+  - History of accessed customers
+  - Quick return to previous contexts
+
+### UI-2: Internal Support Dashboard
+**Priority**: Must Have
+**Business Value**: Efficient customer support operations
+- System-wide visibility
+  - Multi-customer status overview
+  - Support case management
+  - System health indicators
+  - Cross-customer search
+  - Audit log access
+- Support tools
+  - Customer impersonation capabilities
+  - Configuration comparison tools
+  - Bulk operation interfaces
+  - Support documentation access
+  - Emergency access controls
+
+### UI-3: User Management Interface
 **Priority**: Must Have
 **Business Value**: Efficient user administration
 - Provide user search and filtering
@@ -85,7 +162,23 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ## Data Management Requirements
 
-### DM-1: User Profile Data
+### DM-1: Multi-Tenant Data Management
+**Priority**: Must Have
+**Business Value**: Data security and isolation
+- Strict tenant data separation
+  - Customer data isolation
+  - Cross-tenant access controls
+  - Audit trail across tenants
+  - Data access patterns
+  - Support access logging
+- Internal user data management
+  - Cross-tenant permissions
+  - Support role definitions
+  - Action history across tenants
+  - Customer access patterns
+  - Support tool configurations
+
+### DM-2: User Profile Data
 **Priority**: Must Have
 **Business Value**: User information management
 - Store essential user information
