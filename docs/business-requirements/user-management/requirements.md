@@ -11,6 +11,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 **Priority**: Must Have
 
 **Business Value**: Essential for multi-tenant support and internal operations
+
 - Support two primary user categories:
   1. Internal Applogie Users
      - Access to multiple customer instances
@@ -113,7 +114,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 
 ### UI-1: Customer Context Switcher
+
 **Priority**: Must Have
+
 **Business Value**: Essential for internal user productivity
 - Persistent customer context selector
   - Always visible for internal users
@@ -188,7 +191,9 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 
 ### DM-1: Multi-Tenant Data Management
+
 **Priority**: Must Have
+
 **Business Value**: Data security and isolation
 - Strict tenant data separation
   - Customer data isolation
