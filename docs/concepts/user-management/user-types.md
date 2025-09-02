@@ -1,32 +1,6 @@
 # User Types and Relationships
 
-This document explains the different types of users in Applogie and ho### Special Relationships
-
-### Executive Visibility
-- **Access Level**: Enterprise-wide view access
-- **Purpose**: Strategic oversight and decision-making
-- **Limitations**: View-only access without operational responsibilities
-- **Example**: [Edward Ellsworth](../user-personas/external/company-executive.md) has visibility into overall technology investments without direct system management responsibilities
-
-### Data Specialists
-- May have unique cross-department access for data management
-- Focus on data accuracy and integration
-- Example: [Diana Dwyer](../user-personas/external/data-specialist.md) ensuring data quality across departments relate to various aspects of the syste### Common Scenarios
-
-### New Employee Onboarding
-1. Finance team or delegated administrator creates user account
-2. Department and role assignments are configured
-3. Appropriate licenses are assigned
-4. Technical integration details are provided if needed
-
-### Subscription Onboarding
-1. Business owner initiates subscription documentation
-2. System prompts for required information
-3. Automated reminders for missing details
-4. Finance team validates and approves
-5. Technical integration setup if required
-
-### Role Changesing their roles in subscription management, document handling, and financial oversight.
+This document explains the different types of users in Applogie and their roles in subscription management, document handling, and financial oversight.
 
 ## Key Principles
 
@@ -113,6 +87,12 @@ Users in Applogie fall into two main categories:
 
 ## Special Relationships
 
+### Executive Visibility
+- **Access Level**: Enterprise-wide view access
+- **Purpose**: Strategic oversight and decision-making
+- **Limitations**: View-only access without operational responsibilities
+- **Example**: [Edward Ellsworth](../user-personas/external/company-executive.md) has visibility into overall technology investments without direct system management responsibilities
+
 ### Data Specialists
 - May have unique cross-department access for data management
 - Focus on data accuracy and integration
@@ -174,10 +154,17 @@ Users in Applogie fall into two main categories:
 ## Common Scenarios
 
 ### New Employee Onboarding
-1. Department manager requests access
-2. System administrator creates user account
+1. Finance team or delegated administrator creates user account
+2. Department and role assignments are configured
 3. Appropriate licenses are assigned
-4. Department-specific access is granted
+4. Technical integration details are provided if needed
+
+### Subscription Onboarding
+1. Business owner initiates subscription documentation
+2. System prompts for required information
+3. Automated reminders for missing details
+4. Finance team validates and approves
+5. Technical integration setup if required
 
 ### Role Changes
 1. Review current access and responsibilities
