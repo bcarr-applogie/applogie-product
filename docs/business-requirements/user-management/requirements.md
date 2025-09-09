@@ -35,6 +35,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
   - Access support-specific tools
   - Perform administrative actions
 
+### UM-3: User Account Management
 
 **Priority**: Must Have
 
@@ -47,13 +48,23 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ### UM-4: Role-Based Access Control
 
+**Priority**: Must Have
+
 - Maintain role hierarchy
+- Support for internal "Super User" role with god-level access to all data
 
 ### UM-5: Department Management
 
 **Priority**: Must Have
 
 - Enable department-specific role assignments
+
+### UM-6: Internal User Access Control
+
+**Priority**: Must Have
+
+- Not all internal users will have access to all customer environments
+- Access to customer environments for internal users should be configurable
 
 ### UM-7: User Session Management
 
@@ -78,7 +89,6 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ### UI-3: User Management Interface
 
-
 **Business Value**: Efficient user administration
 - Provide user search and filtering
 - Display user status indicators
@@ -86,6 +96,8 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Present department associations
 - Enable bulk operations
 - Support sortable/filterable user lists
+
+### UI-4: Role Management Interface
 
 - Show role permissions
 - List users assigned to roles
@@ -99,6 +111,8 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 ## Data Management Requirements
 
+
+### DM-1: Tenant Data Isolation
 
 **Business Value**: Data security and isolation
 - Strict tenant data separation
@@ -128,6 +142,4 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Ensure performance under load
 - Support backup and recovery
 - Enable system monitoring
-
 - Audit system capabilities
-
