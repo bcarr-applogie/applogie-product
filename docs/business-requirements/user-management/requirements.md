@@ -23,6 +23,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 ### Excluded from MVP (Future Considerations):
 - Advanced role and department management interfaces (UI-4, UI-5)
 - Bulk user import
+- Single Sign-On (SSO) Integration
 
 ## Core Requirements
 
@@ -73,6 +74,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 **Acceptance Criteria**:
 - The system must have a secure user session management system.
 - The system must automatically log out users after a configurable period of inactivity.
+- For MVP, the system will use a simple username/password authentication mechanism. SSO integration is a future consideration.
 
 ## User Interface Requirements
 
@@ -130,3 +132,4 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - **UI-4: Role Management Interface**: A more advanced interface for managing roles and permissions.
 - **UI-5: Department Management Interface**: A more advanced interface for managing departments and their relationships.
 - **Bulk User Import**: The ability to import multiple users from a file.
+- **Single Sign-On (SSO) Integration**: The ability to integrate with customer's existing SSO solutions (e.g., SAML, OAuth).
