@@ -59,18 +59,6 @@ This document defines the key terms used throughout the Applogie product documen
   - Renewal terms
   - Special conditions or amendments
 
-### Technical Owner
-- **Definition**: An individual responsible for the technical aspects of subscription integration and management.
-- **Relationships**:
-  - Works with **Department Subscription Owner**
-  - Manages technical aspects of **Subscriptions**
-  - May span multiple **Departments**
-- **Responsibilities**:
-  - Integration setup
-  - Access configuration
-  - Technical documentation
-  - System maintenance
-
 ### Budget Forecast
 - **Definition**: A projected financial plan for subscription costs over multiple years.
 - **Relationships**:
@@ -140,6 +128,10 @@ Users with visibility and access across all departments:
   - Vendor relationship management
   - Enterprise-wide compliance monitoring
 
+- **Enterprise Technical Subscription Owner**:
+  - Manages the technical aspects of all subscriptions across the enterprise.
+  - Responsibilities include integration setup, access configuration, and technical documentation.
+
 #### Department-Level Roles
 Users with visibility and access limited to their assigned department(s):
 - **Department Manager**:
@@ -159,6 +151,10 @@ Users with visibility and access limited to their assigned department(s):
   - License user assignment
   - Usage monitoring
   - Renewal management
+
+- **Department Technical Subscription Owner**:
+  - Manages the technical aspects of subscriptions assigned to their specific department.
+  - Responsibilities include integration setup, access configuration, and technical documentation for their department's subscriptions.
 
 - **Department Read-Only User**:
   - Views department subscriptions
