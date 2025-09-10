@@ -108,7 +108,22 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 ### DM-2: User Profile Data
 **Priority**: Must Have
 **Acceptance Criteria**:
-- The system must store essential user profile information, including name, email, contact details, department associations, and role assignments.
+- The system must store essential user profile information.
+
+**Required Fields:**
+- `userId` (unique identifier)
+- `userName` (for login; can be the same as emailAddress)
+- `emailAddress`
+- `firstName`
+- `lastName`
+- `department`
+
+**Optional Fields (TBD):**
+- `avatar`
+- `location`
+- `address`
+- `phoneNumber`
+- `supervisor`
 
 ## Future Considerations
 - **UI-4: Role Management Interface**: A more advanced interface for managing roles and permissions.
