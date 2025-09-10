@@ -15,6 +15,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - UM-6: Applogie Team User Access Control
 - UM-7: User Session Management
 - UI-1: Customer Context Switcher
+- UI-2: Distinguish Applogie Team Users
 - UI-3: User Management Interface
 - DM-1: Tenant Data Isolation
 - DM-2: User Profile Data
@@ -80,6 +81,14 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - Applogie Team Users must have a persistent and easily accessible UI element to switch between customer contexts.
 - The context switcher must clearly indicate the current customer context.
 - The context switcher must provide a way to search for customer instances.
+
+### UI-2: Distinguish Applogie Team Users
+**Priority**: Must Have
+**Business Value**: Provides transparency to customers about who is making changes to their data.
+**Acceptance Criteria**:
+- When a Customer User sees a user's name or avatar in the UI, there must be a clear visual indicator if that user is an Applogie Team User.
+- This indicator should be present in all places where a user's identity is displayed, such as audit logs, user lists, and "last updated by" fields.
+- The visual distinction should be easily understandable and not rely solely on color.
 
 ### UI-3: User Management Interface
 **Priority**: Must Have
