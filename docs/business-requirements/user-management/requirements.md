@@ -84,6 +84,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - Applogie Team Users must have a persistent and easily accessible UI element to switch between customer contexts.
 - The context switcher must clearly indicate the current customer context.
 - The context switcher must provide a way to search for customer instances.
+- The name of the customer instance must be prominently displayed in the page header at all times for Applogie Team Users.
 
 ### UI-2: Distinguish Applogie Team Users
 **Priority**: Must Have
