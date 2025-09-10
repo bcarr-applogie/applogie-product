@@ -11,7 +11,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 **Priority**: Must Have
 
 - Support two primary user categories:
-  1. Internal Applogie Users
+  1. Applogie Team Users
      - Access to multiple customer instances
      - Support role capabilities
      - System-wide administrative functions
@@ -23,7 +23,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 - Maintain clear separation between user types
 - Support customer-specific branding/customization for customer users
 
-### UM-2: Internal User Capabilities
+### UM-2: Applogie Team User Capabilities
 
 **Priority**: Must Have
 
@@ -51,7 +51,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 **Priority**: Must Have
 
 - Maintain role hierarchy
-- Support for internal "Super User" role with god-level access to all data
+- Support for "Super User" role with god-level access to all data
 
 ### UM-5: Department Management
 
@@ -59,12 +59,12 @@ Requirements for managing users, roles, and access controls within the Applogie 
 
 - Enable department-specific role assignments
 
-### UM-6: Internal User Access Control
+### UM-6: Applogie Team User Access Control
 
 **Priority**: Must Have
 
-- Not all internal users will have access to all customer environments
-- Access to customer environments for internal users should be configurable
+- Not all Applogie Team Users will have access to all customer environments
+- Access to customer environments for Applogie Team Users should be configurable
 
 ### UM-7: User Session Management
 
@@ -77,7 +77,7 @@ Requirements for managing users, roles, and access controls within the Applogie 
 ### UI-1: Customer Context Switcher
 
 - Persistent customer context selector
-  - Always visible for internal users
+  - Always visible for Applogie Team Users
   - Clear current customer indication
   - Quick search functionality
   - Recent customer list

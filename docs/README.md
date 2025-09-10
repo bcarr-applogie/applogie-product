@@ -22,17 +22,17 @@ Detailed workflows for specific user roles within the system.
 ### 👤 [User Personas](./user-personas/)
 Detailed profiles of different user types who interact with the Applogie platform.
 
-#### External Users
-- [Company Executive](./user-personas/external/company-executive.md)
-- [Data Specialist](./user-personas/external/data-specialist.md)
-- [Finance Director](./user-personas/external/finance-director.md)
-- [Subscription Owner](./user-personas/external/subscription-owner.md)
+#### Customer Users
+- [Company Executive](./user-personas/customer/company-executive.md)
+- [Data Specialist](./user-personas/customer/data-specialist.md)
+- [Finance Director](./user-personas/customer/finance-director.md)
+- [Subscription Owner](./user-personas/customer/subscription-owner.md)
 
-#### Internal Users
-- [Customer Support](./user-personas/internal/customer-support.md)
-- [ERP Integration Specialist](./user-personas/internal/erp-integration-specialist.md)
-- [Subscription Specialist](./user-personas/internal/subscription-specialist.md)
-- [Vendor Integration Specialist](./user-personas/internal/vendor-integration-specialist.md)
+#### Applogie Team Users
+- [Customer Support](./user-personas/applogie-team/customer-support.md)
+- [ERP Integration Specialist](./user-personas/applogie-team/erp-integration-specialist.md)
+- [Subscription Specialist](./user-personas/applogie-team/subscription-specialist.md)
+- [Vendor Integration Specialist](./user-personas/applogie-team/vendor-integration-specialist.md)
 
 ### 🏗 [Concepts](./concepts/)
 Core concepts and architectural information about how Applogie works.
@@ -57,8 +57,8 @@ Detailed analysis documents and recommendations.
 ### Document Templates
 Templates for creating new documentation can be found in the respective folders:
 - User Persona Templates: [`/user-personas/templates/`](./user-personas/templates/)
-  - [External Persona Template](./user-personas/templates/external-persona-template.md)
-  - [Internal Persona Template](./user-personas/templates/internal-persona-template.md)
+  - [Customer Persona Template](./user-personas/templates/customer-persona-template.md)
+  - [Applogie Team Persona Template](./user-personas/templates/applogie-team-persona-template.md)
 
 ### Style Guide
 - Use clear, concise language

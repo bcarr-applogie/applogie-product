@@ -1,6 +1,6 @@
 # Applogie User Personas
 
-This directory contains detailed user personas for both external customers and internal team members of Applogie. These personas help us understand the needs, goals, and pain points of our users to inform product development and decision-making.
+This directory contains detailed user personas for both customer users and Applogie team members. These personas help us understand the needs, goals, and pain points of our users to inform product development and decision-making.
 
 ## Structure
 
@@ -8,44 +8,44 @@ This directory contains detailed user personas for both external customers and i
 user-personas/
 ├── README.md (this file)
 ├── templates/
-│   ├── external-persona-template.md
-│   └── internal-persona-template.md
-├── external/
+│   ├── customer-persona-template.md
+│   └── applogie-team-persona-template.md
+├── customer/
 │   ├── data-specialist.md
 │   ├── subscription-owner.md
 │   ├── finance-director.md
 │   └── company-executive.md
-└── internal/
+└── applogie-team/
     ├── erp-integration-specialist.md
     ├── subscription-specialist.md
     ├── vendor-integration-specialist.md
     └── customer-support.md
 ```
 
-## External User Personas
+## Customer User Personas
 
-External users are customers who use Applogie to manage their software subscriptions and spending.
+Customer users are customers who use Applogie to manage their software subscriptions and spending.
 
-- **[Diana Dwyer](external/data-specialist.md)** - Data Specialist who ensures accuracy in the system
-- **[Samuel Singh](external/subscription-owner.md)** - Subscription Owner managing organizational licenses
-- **[Francine Fitzgerald](external/finance-director.md)** - Finance Director overseeing software spend
-- **[Edward Ellsworth](external/company-executive.md)** - Company Executive with final spending authority
+- **[Diana Dwyer](customer/data-specialist.md)** - Data Specialist who ensures accuracy in the system
+- **[Samuel Singh](customer/subscription-owner.md)** - Subscription Owner managing organizational licenses
+- **[Francine Fitzgerald](customer/finance-director.md)** - Finance Director overseeing software spend
+- **[Edward Ellsworth](customer/company-executive.md)** - Company Executive with final spending authority
 
-## Internal User Personas
+## Applogie Team User Personas
 
-Internal users are Applogie team members who support the platform and customers.
+Applogie team members who support the platform and customers.
 
-- **[Elena Espinoza](internal/erp-integration-specialist.md)** - ERP Integration Specialist connecting systems
-- **[Sean Statler](internal/subscription-specialist.md)** - Subscription Specialist tracking vendor details
-- **[Victoria Vega](internal/vendor-integration-specialist.md)** - Vendor Integration Specialist building APIs
-- **[Carlos Chen](internal/customer-support.md)** - Customer Support providing frontline assistance
+- **[Elena Espinoza](applogie-team/erp-integration-specialist.md)** - ERP Integration Specialist connecting systems
+- **[Sean Statler](applogie-team/subscription-specialist.md)** - Subscription Specialist tracking vendor details
+- **[Victoria Vega](applogie-team/vendor-integration-specialist.md)** - Vendor Integration Specialist building APIs
+- **[Carlos Chen](applogie-team/customer-support.md)** - Customer Support providing frontline assistance
 
 ## Persona Creation Process
 
 Our user personas were developed through a structured process to ensure they accurately represent Applogie's target market:
 
 ### 1. Role Identification
-- Analyzed both external users (customers) and internal team members
+- Analyzed both customer users and Applogie team members
 - Identified key roles that interact with the platform
 - Determined primary responsibilities and interactions
 
@@ -56,7 +56,7 @@ Our user personas were developed through a structured process to ensure they acc
 
 ### 3. Persona Development Steps
 1. **Template Creation**
-   - Developed standardized templates for external and internal personas
+   - Developed standardized templates for customer and Applogie team personas
    - Included sections for demographics, goals, pain points, and behaviors
    - Established consistent formatting and structure
 
@@ -105,5 +105,5 @@ Our user personas were developed through a structured process to ensure they acc
 
 ---
 
-**Last Updated:** July 21, 2025  
+**Last Updated:** July 21, 2025
 **Maintained by:** Product Research Team
