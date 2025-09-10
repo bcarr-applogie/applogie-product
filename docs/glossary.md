@@ -174,31 +174,6 @@ Users with visibility and access limited to their assigned department(s):
   - Department affiliation
   - Employee status (active/inactive)
 
-## Hierarchy
-
-```mermaid
-graph TD
-    Customer --> Department
-    Customer --> CustomerUser[Customer User]
-    Customer --> LicenseUser[License User]
-    Customer --> Subscription
-    Vendor --> Subscription
-    Department --> LicenseUser[License User *]
-    Department --> Subscription[Subscription *]
-    CustomerUser --> Subscription[Manages Subscriptions]
-    CustomerUser --> LicenseUser[Manages License Users]
-    Subscription --> LicenseUser[Assigned to]
-    ApplogieTeamUser[Applogie Team User] --> Customer
-    
-    style Customer fill:#f9f,stroke:#333,stroke-width:2px
-    style Vendor fill:#bbf,stroke:#333,stroke-width:2px
-    style Department fill:#bfb,stroke:#333,stroke-width:2px
-    style ApplogieTeamUser fill:#fbb,stroke:#333,stroke-width:2px
-    style CustomerUser fill:#fdb,stroke:#333,stroke-width:2px
-    style LicenseUser fill:#ffb,stroke:#333,stroke-width:2px
-    style Subscription fill:#fff,stroke:#333,stroke-width:2px
-```
-
 ## Additional Context
 
 ### Role-Based Access and Scope
