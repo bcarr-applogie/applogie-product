@@ -45,59 +45,6 @@ This document defines the key terms used throughout the Applogie product documen
   - Cost center information
   - Department head/manager
 
-### Applogie User
-- **Definition**: An individual who has login credentials and uses the Applogie platform to manage, monitor, or administer subscriptions and related tasks.
-- **Relationships**:
-  - Belongs to one **Customer**
-  - Can be Enterprise-level or Department-level
-  - Can manage multiple **Subscriptions** (based on scope)
-  - Can manage multiple **License Users** (based on scope)
-
-#### Enterprise-Level Roles
-Users with visibility and access across all departments:
-- **System Administrator**:
-  - Full system configuration access
-  - Manages all departments and users
-  - Complete subscription oversight
-  - User and role management
-
-- **Enterprise Finance Manager**:
-  - Cross-department financial oversight
-  - Company-wide cost analysis
-  - Budget management across departments
-  - Enterprise-level reporting
-
-- **Enterprise Subscription Manager**:
-  - Cross-department subscription management
-  - License allocation across departments
-  - Vendor relationship management
-  - Enterprise-wide compliance monitoring
-
-#### Department-Level Roles
-Users with visibility and access limited to their assigned department(s):
-- **Department Manager**:
-  - Manages department subscriptions
-  - Oversees department license users
-  - Department-level reporting
-  - Budget tracking for department
-
-- **Department Finance Analyst**:
-  - Department cost tracking
-  - Subscription usage analysis
-  - Department budget management
-  - Department-specific reporting
-
-- **Department Subscription Owner**:
-  - Manages specific subscriptions
-  - License user assignment
-  - Usage monitoring
-  - Renewal management
-
-- **Department Read-Only User**:
-  - Views department subscriptions
-  - Access to department reports
-  - No modification privileges
-
 ### Agreement
 - **Definition**: A formal document that outlines the terms, conditions, and details of a subscription between a Customer and a Vendor.
 - **Relationships**:
@@ -150,17 +97,73 @@ Users with visibility and access limited to their assigned department(s):
   - Version control
   - Access controls
 
-### License User
-- **Definition**: An individual who uses a subscription service but may not have direct access to Applogie.
+## Users
+
+### Applogie Team User
+- **Definition**: An individual who is part of the Applogie team and has access to customer instances for support and administration.
 - **Relationships**:
-  - Associated with one or more **Subscriptions**
-  - Belongs to one or more **Departments**
-  - Managed by **Department Subscription Owner**
-- **Attributes**:
-  - License assignments
-  - Usage data
-  - Department association
-  - Access levels
+  - Can access multiple **Customer** instances
+  - Manages **Customer Users** and their roles
+
+#### Applogie Team User Roles
+- **Super User**:
+  - God-level access to all data across all customers
+- **Support User**:
+  - Access to specific customer instances as needed for support
+  - Can view and modify customer data with appropriate permissions
+
+### Customer User
+- **Definition**: An individual who has login credentials and uses the Applogie platform to manage, monitor, or administer subscriptions and related tasks for their own company.
+- **Relationships**:
+  - Belongs to one **Customer**
+  - Can be Enterprise-level or Department-level
+  - Can manage multiple **Subscriptions** (based on scope)
+  - Can manage multiple **License Users** (based on scope)
+
+#### Enterprise-Level Roles
+Users with visibility and access across all departments:
+- **System Administrator**:
+  - Full system configuration access
+  - Manages all departments and users
+  - Complete subscription oversight
+  - User and role management
+
+- **Enterprise Finance Manager**:
+  - Cross-department financial oversight
+  - Company-wide cost analysis
+  - Budget management across departments
+  - Enterprise-level reporting
+
+- **Enterprise Subscription Manager**:
+  - Cross-department subscription management
+  - License allocation across departments
+  - Vendor relationship management
+  - Enterprise-wide compliance monitoring
+
+#### Department-Level Roles
+Users with visibility and access limited to their assigned department(s):
+- **Department Manager**:
+  - Manages department subscriptions
+  - Oversees department license users
+  - Department-level reporting
+  - Budget tracking for department
+
+- **Department Finance Analyst**:
+  - Department cost tracking
+  - Subscription usage analysis
+  - Department budget management
+  - Department-specific reporting
+
+- **Department Subscription Owner**:
+  - Manages specific subscriptions
+  - License user assignment
+  - Usage monitoring
+  - Renewal management
+
+- **Department Read-Only User**:
+  - Views department subscriptions
+  - Access to department reports
+  - No modification privileges
 
 ### License User
 - **Definition**: An individual within the Customer organization who uses or is assigned to one or more software subscriptions, but may not necessarily have access to the Applogie platform.
@@ -168,7 +171,7 @@ Users with visibility and access limited to their assigned department(s):
   - Belongs to one **Customer**
   - Can belong to one or more **Departments**
   - Can be assigned to multiple **Subscriptions**
-  - May or may not be an **Applogie User**
+  - May or may not be a **Customer User**
 - **Attributes**:
   - License assignments
   - Usage data
@@ -180,21 +183,23 @@ Users with visibility and access limited to their assigned department(s):
 ```mermaid
 graph TD
     Customer --> Department
-    Customer --> Applogie[Applogie User]
-    Customer --> License[License User]
+    Customer --> CustomerUser[Customer User]
+    Customer --> LicenseUser[License User]
     Customer --> Subscription
     Vendor --> Subscription
-    Department --> License[License User *]
+    Department --> LicenseUser[License User *]
     Department --> Subscription[Subscription *]
-    Applogie --> Subscription[Manages Subscriptions]
-    Applogie --> License[Manages License Users]
-    Subscription --> License[Assigned to]
+    CustomerUser --> Subscription[Manages Subscriptions]
+    CustomerUser --> LicenseUser[Manages License Users]
+    Subscription --> LicenseUser[Assigned to]
+    ApplogieTeamUser[Applogie Team User] --> Customer
     
     style Customer fill:#f9f,stroke:#333,stroke-width:2px
     style Vendor fill:#bbf,stroke:#333,stroke-width:2px
     style Department fill:#bfb,stroke:#333,stroke-width:2px
-    style Applogie fill:#fbb,stroke:#333,stroke-width:2px
-    style License fill:#ffb,stroke:#333,stroke-width:2px
+    style ApplogieTeamUser fill:#fbb,stroke:#333,stroke-width:2px
+    style CustomerUser fill:#fdb,stroke:#333,stroke-width:2px
+    style LicenseUser fill:#ffb,stroke:#333,stroke-width:2px
     style Subscription fill:#fff,stroke:#333,stroke-width:2px
 ```
 
@@ -231,7 +236,6 @@ Users with enterprise-level roles have broad, cross-departmental access:
 
 #### Department-Level Access
 Users with department-level roles have access limited to their assigned department(s):
-
 - **Department Manager Capabilities**:
   - Manage department-specific settings
   - Assign department-level user roles
