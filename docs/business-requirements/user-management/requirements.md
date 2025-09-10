@@ -66,6 +66,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 **Acceptance Criteria**:
 - Access to customer instances for Applogie Team Users must be configurable.
 - By default, Applogie Team Users should not have access to any customer instances unless explicitly granted.
+- The assignment of Applogie Team Users to customer instances must be managed by a "Super User".
 
 ### UM-7: User Session Management
 **Priority**: Must Have
