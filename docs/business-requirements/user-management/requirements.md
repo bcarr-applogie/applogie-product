@@ -22,6 +22,8 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - UI-6: Department Assignment Controls
 - DM-1: Tenant Data Isolation
 - DM-2: User Profile Data
+- BE-1: User Management API
+- BE-2: Database Schema
 
 ### Excluded from MVP (Future Considerations):
 - Advanced role and department management interfaces
@@ -104,6 +106,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - The page must display a list of all users in the system.
 - The user list must be searchable, filterable, and sortable.
 - The user list must display key information for each user, such as `userName`, `emailAddress`, `firstName`, `lastName`, `department`, and `status`.
+- The page must include a "Create User" button that allows authorized users to create new user accounts.
 
 ### UI-4: User Profile Page
 **Priority**: Must Have
@@ -112,6 +115,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - The page must display all the user's profile data.
 - Users with the appropriate permissions must be able to edit the user's profile information.
 - The page must provide controls for deactivating/reactivating the user's account.
+- The page must provide a control for deleting the user's account, with a confirmation step to prevent accidental deletion.
 
 ### UI-5: Role Assignment Controls
 **Priority**: Must Have
@@ -154,6 +158,23 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - `address`
 - `phoneNumber`
 - `supervisor`
+
+## Backend Requirements
+
+### BE-1: User Management API
+**Priority**: Must Have
+**Acceptance Criteria**:
+- The system must provide a secure REST API for managing users.
+- The API must include endpoints for creating, reading, updating, and deleting users (CRUD).
+- The API must enforce role-based access control to ensure that only authorized users can perform administrative actions.
+- The API must validate all incoming data to ensure data integrity.
+
+### BE-2: Database Schema
+**Priority**: Must Have
+**Acceptance Criteria**:
+- The database schema must be able to store all the required and optional user profile data.
+- The schema must be designed to support efficient querying of user data.
+- The schema must enforce data integrity constraints.
 
 ## Future Considerations
 - **Advanced Role Management Interface**: A more advanced interface for managing roles and permissions.
