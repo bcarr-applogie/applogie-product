@@ -22,6 +22,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - UI-6: Department Assignment Controls
 - DM-1: Tenant Data Isolation
 - DM-2: User Profile Data
+- DM-3: User Data Retention
 - BE-1: User Management API
 - BE-2: Database Schema
 
@@ -52,6 +53,13 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - The system must support the creation, modification, and deactivation of user accounts.
 - Each user account must have a unique identifier.
 - All changes to user account status must be tracked in an audit log.
+- **Deactivating a User:**
+  - A deactivated user cannot log in to the system.
+  - All data associated with the user is preserved.
+  - A deactivated user can be reactivated at any time.
+- **Deleting a User:**
+  - A deleted user is permanently removed from the system from a UI perspective.
+  - A deleted user cannot be reactivated.
 
 ### UM-4: Role-Based Access Control
 **Priority**: Must Have
@@ -107,6 +115,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - The user list must be searchable, filterable, and sortable.
 - The user list must display key information for each user, such as `userName`, `emailAddress`, `firstName`, `lastName`, `department`, and `status`.
 - The page must include a "Create User" button that allows authorized users to create new user accounts.
+- The user list must include controls for deactivating/reactivating and deleting user accounts.
 
 ### UI-4: User Profile Page
 **Priority**: Must Have
@@ -158,6 +167,13 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - `address`
 - `phoneNumber`
 - `supervisor`
+
+### DM-3: User Data Retention
+**Priority**: Must Have
+**Acceptance Criteria**:
+- When a user is deleted, their record in the database must be "soft deleted" (marked as deleted, but not physically removed) to maintain referential integrity.
+- In all user-facing displays (e.g., audit logs, "last updated by" fields), the name of a deactivated user must be displayed with a "(Deactivated)" status next to it.
+- In all user-facing displays, the name of a deleted user must be displayed with a "(Deleted)" status next to it.
 
 ## Backend Requirements
 
