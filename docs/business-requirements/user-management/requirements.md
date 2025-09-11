@@ -16,12 +16,15 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - UM-7: User Session Management
 - UI-1: Customer Context Switcher
 - UI-2: Distinguish Applogie Team Users
-- UI-3: User Management Interface
+- UI-3: User Management Page
+- UI-4: User Profile Page
+- UI-5: Role Assignment Controls
+- UI-6: Department Assignment Controls
 - DM-1: Tenant Data Isolation
 - DM-2: User Profile Data
 
 ### Excluded from MVP (Future Considerations):
-- Advanced role and department management interfaces (UI-4, UI-5)
+- Advanced role and department management interfaces
 - Bulk user import
 - Single Sign-On (SSO) Integration
 
@@ -94,12 +97,35 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - This indicator should be present in all places where a user's identity is displayed, such as audit logs, user lists, and "last updated by" fields.
 - The visual distinction should be easily understandable and not rely solely on color.
 
-### UI-3: User Management Interface
+### UI-3: User Management Page
 **Priority**: Must Have
 **Acceptance Criteria**:
-- The user management interface must allow administrators to search, filter, and sort the list of users.
-- The interface must display the status, roles, and department associations for each user.
-- The interface must support bulk operations for common user management tasks.
+- The page must be accessible to users with the appropriate permissions (e.g., System Administrator, Enterprise Finance Manager).
+- The page must display a list of all users in the system.
+- The user list must be searchable, filterable, and sortable.
+- The user list must display key information for each user, such as `userName`, `emailAddress`, `firstName`, `lastName`, `department`, and `status`.
+
+### UI-4: User Profile Page
+**Priority**: Must Have
+**Acceptance Criteria**:
+- The page must be accessible by clicking on a user in the User Management Page.
+- The page must display all the user's profile data.
+- Users with the appropriate permissions must be able to edit the user's profile information.
+- The page must provide controls for deactivating/reactivating the user's account.
+
+### UI-5: Role Assignment Controls
+**Priority**: Must Have
+**Acceptance Criteria**:
+- The User Profile Page must include a section for managing the user's roles.
+- Administrators must be able to assign one or more roles to a user.
+- The UI must clearly display the roles currently assigned to the user.
+
+### UI-6: Department Assignment Controls
+**Priority**: Must Have
+**Acceptance Criteria**:
+- The User Profile Page must include a section for managing the user's department assignments.
+- Administrators must be able to assign a user to one or more departments.
+- The UI must clearly display the departments the user is assigned to.
 
 ## Data Management Requirements
 
@@ -130,7 +156,7 @@ This document outlines the Minimum Viable Product (MVP) for the User Management 
 - `supervisor`
 
 ## Future Considerations
-- **UI-4: Role Management Interface**: A more advanced interface for managing roles and permissions.
-- **UI-5: Department Management Interface**: A more advanced interface for managing departments and their relationships.
+- **Advanced Role Management Interface**: A more advanced interface for managing roles and permissions.
+- **Advanced Department Management Interface**: A more advanced interface for managing departments and their relationships.
 - **Bulk User Import**: The ability to import multiple users from a file.
 - **Single Sign-On (SSO) Integration**: The ability to integrate with customer's existing SSO solutions (e.g., SAML, OAuth).
